@@ -14,14 +14,14 @@ This project aims to remove that barrier by letting users **describe a cohort in
 ##  Architecture Overview
 
 ```
-User Input (Natural Language)
-        │
-        ▼
-┌───────────────────┐
-│   Routing Agent   │  ◄── Intent Classification (LLM)
-└───────────────────┘
-        │
-   ┌────┴─────────────────────────────────────────┐
+            User Input (Natural Language)
+                          │
+                          ▼
+                ┌───────────────────┐
+                │   Routing Agent   │  ◄── Intent Classification (LLM)
+                └───────────────────┘
+                          │
+   ┌──────────────────────┴───────────────────────┐
    │                      │                       │                 
    ▼                      ▼                       ▼
 Tool 1               Tool 2                  Tool 3
